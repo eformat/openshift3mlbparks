@@ -13,9 +13,9 @@
    },
    "parameters": [
       {
-         "description": "EAP Release version, e.g. 6.4, etc.",
+         "description": "EAP 6.4 Image Stream Release version, e.g. 1.1,latest etc.",
          "name": "EAP_RELEASE",
-         "value": "6.4"
+         "value": "1.1"
       },
       {
          "description": "The name for the application.",
@@ -30,7 +30,7 @@
       {
          "description": "Git source URI for application",
          "name": "GIT_URI",
-         "value": "https://github.com/gshipley/openshift3mlbparks.git"
+         "value": "https://github.com/eformat/openshift3mlbparks.git"
       },
       {
          "description": "Git branch/tag reference",
@@ -127,7 +127,7 @@
                   "from": {
                      "kind": "ImageStreamTag",
                      "namespace": "openshift",
-                     "name": "jboss-eap6-openshift:${EAP_RELEASE}"
+                     "name": "jboss-eap64-openshift:${EAP_RELEASE}"
                   }
                }
             },
